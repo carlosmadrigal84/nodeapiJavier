@@ -1,0 +1,13 @@
+.cabecera {
+  margin-top: 60px;;
+}
+
+.formulario {
+  margin: 100px;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    background-color: black;
+  }
+}

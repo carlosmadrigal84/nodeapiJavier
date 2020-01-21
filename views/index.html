@@ -1,0 +1,48 @@
+<% include header.html %>
+
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-lg-7 cabecera">
+        <div class="header-content mx-auto">
+
+
+            <h1><%= title %></h1>
+            <p><%= __('Welcome to') %> <%= title %></p>
+
+            <h2><%= __('Escapar valores') %></h2>
+            <p><%= valor %></p>
+
+            <h2><%= __('Condicionales') %></h2>
+            <% if (condicion.estado ) { %>
+              <p><%= condicion.segundo %> <%= __('es par') %></p>
+            <% } else { %>
+              <p><%= condicion.segundo %> <%= __('es impar') %></p>
+            <% } %>
+
+            <h2>Bucles</h2>
+            <% users.forEach(user => { %>
+              <p><%= user.name %> tiene <%= user.age %> años</p>
+            <% }) %>
+
+            <h2><%= __('Pruebas de i18n') %></h2>
+
+            <h3>Intercalar valores en literales</h3>
+            <p><%= __('Hola, mi nombre es {{name}} y mi edad es {{age}}', users[0])  %></p>
+
+            <h3>Forzar un idioma concreto</h3>
+            <p><%= __({ phrase: 'Welcome to', locale: 'en'})  %></p>
+
+            <h3>Pluralización</h3>
+            <p><%= __n('Mouse', condicion.segundo) %></p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<% include footer.html %>

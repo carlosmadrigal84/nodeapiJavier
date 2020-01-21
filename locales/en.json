@@ -1,0 +1,18 @@
+{
+	"EXAMPLE": "EXAMPLE",
+	"Welcome to": "Welcome to",
+	"Escapar valores": "Escapar valores",
+	"Condicionales": "Condicionales",
+	"es par": "es par",
+	"es impar": "es impar",
+	"Pruebas de i18n": "Pruebas de i18n",
+	"Hola, mi nombre es {{name}} y mi edad es {{age}}": "Hola, mi nombre es {{name}} y mi edad es {{age}}",
+	"Mouse": {
+		"one": "%s mouse",
+		"other": "%s mice"
+	},
+	"inyeccion de codigo": "code injection",
+	"Services": "Services",
+	"Text of services": "Text of services",
+	"Invalid credentials": "Invalid credentials"
+}
